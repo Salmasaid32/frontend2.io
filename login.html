@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bg{
+            background-color: red;
+        }
+        body{
+            background-image: url("img1.jpg");
+        }
+        .box1{
+            height: 500px;
+            width: 450px;
+            background-color: black;
+            margin: 70px auto;
+            opacity: 9;
+            color: white;
+            padding: 20px;
+
+        }
+        label{
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg">
+        <a href=""  class="navbar-brand fs-3 ms-3 text-white">library management system</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#btn">
+        <i class="bx bx-menu"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="btn">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="home.html" class="nav-link mx-3 text-white fs-5">home</a>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link mx-3 text-white fs-5">login</a>
+            </li>
+            <li class="nav-item">
+                <a href="requestbook.html" class="nav-link mx-3 text-white fs-5">books</a>
+            </li>
+           
+            <li class="nav-item">
+                <a href="signup.html" class="nav-link mx-3 text-white fs-5">sign-up</a>
+            </li>
+            <li class="nav-item">
+                <a href="feedback.html" class="nav-link mx-3 text-white fs-5">feedback</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    <section>
+        <div class="log-img">
+            <br>
+            <div class="box1">
+                <h1 style="text-align: center; font-size: 35px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">library management system</h1>
+                <h1 style="text-align: center; font-size: 25px;">user login form</h1>
+                <br>
+                <form name="login" action="" method="post">
+                    <b><p style="padding-left: 50px; font-size: 15px; font-weight: 700;"></p></b>
+                    <input style="margin-left: 50px; width: 18px;" type="radio" name="user" id="admin" value="admin">
+                    <label>Admin</label>
+                    <input style="margin-left: 50px; width: 18px;" type="radio" name="user" id="student" value="student">
+                    <label> student</label>
+
+                    <div class="login">
+                        <label for="username">username:</label>
+                        <input class="form-control" type="text" name="username" placeholder="username" required=""><br>
+                        <label for="password">password:</label>
+                        <input class="form-control" type="password" name="pasword" placeholder="password" required=""><br>
+                        <input class="btn btn-default" type="submit" name="submit" value="login" style="color: white; width: 70px; height: 30px;">
+                    </div>
+
+                    <p style="color: white; padding-left: 15px;">
+                        <br><br>
+                        <a style="color: yellow; text-decoration: none; " href="updatepassword.html">forgot password?</a> &nbsp &nbsp &nbsp  &nbsp &nbsp
+                        New to user?<a style="color: yellow; text-decoration: none;" href="signup.html">&nbspsign up</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

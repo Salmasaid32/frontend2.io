@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+   <title>home page</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bg{
+            background-color: red;
+        }
+        body{
+            background-image: white;
+        }
+        .box-1{
+            height: 350px;
+            width: 350px;
+            background-color: gray;
+            margin: 70px auto;
+            opacity: 9;
+            color: white;
+            padding: 20px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg">
+        <a href=""  class="navbar-brand fs-3 ms-3 text-white">library management system</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#btn">
+        <i class="bx bx-menu"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="btn">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="home.html" class="nav-link mx-3 text-white fs-5">home</a>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link mx-3 text-white fs-5">login</a>
+            </li>
+            <li class="nav-item">
+                <a href="books.html" class="nav-link mx-3 text-white fs-5">books</a>
+            </li>
+           
+            <li class="nav-item">
+                <a href="signup.html" class="nav-link mx-3 text-white fs-5">sign-up</a>
+            </li>
+            <li class="nav-item">
+                <a href="feedback.html" class="nav-link mx-3 text-white fs-5">feedback</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    <div class="box-1">
+        <h3 style="text-align: center;">Approve request book</h3><br>
+
+        <form class="approve" action="" method="post">
+            <input class="form-control" type="text" name="approve" placeholder="approve or not" required=""><br>
+            <input class="form-control" type="text" name="issue" placeholder="issue date yyyy-mm-dd" required=""><br>
+            <input class="form-control" type="text" name="return" placeholder="return date yyyy-mm-dd" required=""><br>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
